@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# 📁 ProMi - Projects Romi
 
-First, run the development server:
+Manajemen proyek dan klien sederhana berbasis web. Cocok untuk freelancer atau pelaku usaha kecil yang ingin melacak pekerjaan, pembayaran, dan laporan secara efisien.
+
+---
+
+## ✨ Fitur Utama
+
+- 🔐 Login sederhana (tanpa database user)
+- 👥 Manajemen Client (tambah, lihat, hapus)
+- 📋 Tambah Proyek sekaligus Client
+- 💸 Pembayaran: tunai / transfer / QRIS
+- 📊 Statistik: status proyek, pendapatan
+- 🔍 Filter proyek berdasarkan status & pembayaran
+- 📖 History perubahan proyek
+- 📆 Laporan Mingguan & Bulanan (siap dikembangkan)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js** (pages-based)
+- **MongoDB** via `mongodb` driver
+- **Tailwind CSS** via CDN
+- **Icon**: React Icons
+---
+
+## 🚀 Cara Menjalankan
+
+### 1. Clone Repo
+```bash
+git clone https://github.com/romiwebdev/ProMi-project-manager.git
+cd ProMi-project-manager
+````
+
+### 2. Install Dependency
+
+```bash
+npm install
+```
+
+### 3. Setup Environment
+
+Buat file `.env.local`:
+
+```
+MONGODB_URI=your_mongodb_connection_string
+```
+
+### 4. Jalankan App
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka di: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📝 Catatan Penggunaan
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+* Login cukup mengetik apa saja di field password (tidak ada autentikasi kompleks).
+* Semua data disimpan di MongoDB: `clients`, `projects`, dan `activityLogs`.
+* Fitur laporan mingguan/bulanan dan export PDF bisa dikembangkan lebih lanjut.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧑‍💻 Kontribusi
 
-To learn more about Next.js, take a look at the following resources:
+Pull request sangat terbuka! Kamu bisa bantu di:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+* Export laporan ke PDF
+* Fitur reminder deadline
+* Pencarian client/proyek lebih detail
+* Auth login berbasis email/password
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 Lisensi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+> Dibuat dengan semangat produktif oleh Romi.
+
